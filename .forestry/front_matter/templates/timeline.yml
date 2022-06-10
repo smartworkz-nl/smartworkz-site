@@ -1,0 +1,33 @@
+---
+label: timeline
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: type
+  label: type
+  default: timeline
+- type: file
+  name: image
+  label: image
+  description: portrait
+- type: datetime
+  name: date
+  label: date
+pages:
+- content/english/timeline/codecamp.md
+- content/english/timeline/codecamp.md
+- content/english/timeline/coronaproef-christmas-drive-in.md
+- content/english/timeline/coronaproef-christmas-drive-in.md
+- content/english/timeline/dataworkz-bestaat-4-jaar.md
+- content/english/timeline/dataworkz-bestaat-4-jaar.md
+- content/english/timeline/dataworkz-goes-duitsland.md
+- content/english/timeline/dataworkz-goes-duitsland.md
+- content/english/timeline/devoxx-uk.md
+- content/english/timeline/devoxx-uk.md
+- content/english/timeline/efteling.md
+- content/english/timeline/efteling.md
+- content/english/timeline/meetup.md
+- content/english/timeline/meetup.md

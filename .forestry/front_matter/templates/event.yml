@@ -1,0 +1,86 @@
+---
+label: Event
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: file
+  name: bg_image
+  label: bg image
+  description: Page header background image
+- type: textarea
+  name: description
+  label: description
+  description: meta description
+- type: file
+  name: image
+  label: image
+- type: text
+  name: location
+  label: location
+- type: text
+  name: fee
+  label: fee
+  description: Event fee
+- type: text
+  name: apply_url
+  label: apply_url
+  description: Application submit link
+- type: field_group_list
+  name: speaker
+  label: speaker
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: file
+    name: image
+    label: image
+  - type: text
+    name: designation
+    label: designation
+- type: text
+  name: type
+  label: type
+  default: event
+pages:
+- content/english/event/building-trust-in-ai.md
+- content/english/event/building-trust-in-ai.md
+- content/english/event/content-recommendations-at-jodel.com-spiking-neural-networks-in-person-event.md
+- content/english/event/content-recommendations-at-jodel.com-spiking-neural-networks-in-person-event.md
+- content/english/event/dash-ah-a.md
+- content/english/event/dash-ah-a.md
+- content/english/event/data-science-from-idea-to-production-from-your-laptop-to-the-cloud.md
+- content/english/event/data-science-from-idea-to-production-from-your-laptop-to-the-cloud.md
+- content/english/event/data-science-meetup-continuous-delivery-for-machine-learning-on-the-right-tracks-with-cd4ml.md
+- content/english/event/data-science-meetup-continuous-delivery-for-machine-learning-on-the-right-tracks-with-cd4ml.md
+- content/english/event/data-science-serverless-on-land-sea-and-in-the-cloud.md
+- content/english/event/data-science-serverless-on-land-sea-and-in-the-cloud.md
+- content/english/event/elasticsearch-war-stories-microservices-at-the-dutch-national-police.md
+- content/english/event/elasticsearch-war-stories-microservices-at-the-dutch-national-police.md
+- content/english/event/experiences-with-go-lang-for-ml-in-production.md
+- content/english/event/experiences-with-go-lang-for-ml-in-production.md
+- content/english/event/from-pandas-koalas-and-other-fauna-to-train-your-ai-to-play-a-generic-game.md
+- content/english/event/from-pandas-koalas-and-other-fauna-to-train-your-ai-to-play-a-generic-game.md
+- content/english/event/glances-into-the-future-hands-on-time-series-workshop.md
+- content/english/event/glances-into-the-future-hands-on-time-series-workshop.md
+- content/english/event/identity-and-beyond-how-to-manage-your-secrets-in-a-dynamic-multi-cloud-world.md
+- content/english/event/identity-and-beyond-how-to-manage-your-secrets-in-a-dynamic-multi-cloud-world.md
+- content/english/event/leer-alles-over-data-science-in-productie-door-dataiku-dataworkz-en-fiod.md
+- content/english/event/leer-alles-over-data-science-in-productie-door-dataiku-dataworkz-en-fiod.md
+- content/english/event/machine-learning-insights-into-google-brain-and-dutch-cows.md
+- content/english/event/machine-learning-insights-into-google-brain-and-dutch-cows.md
+- content/english/event/predicting-bitcoin-pricing-using-ml-going-cloud-native-dutch-national-police.md
+- content/english/event/predicting-bitcoin-pricing-using-ml-going-cloud-native-dutch-national-police.md
+- content/english/event/reinforcement-and-transfer-learning.md
+- content/english/event/reinforcement-and-transfer-learning.md
+- content/english/event/using-ai-for-asset-detection.md
+- content/english/event/using-ai-for-asset-detection.md
+- content/english/event/workflow-engines-for-a-data-driven-world.md
+- content/english/event/workflow-engines-for-a-data-driven-world.md
+- content/english/event/you-only-look-once-from-graphql-to-training-a-neural-network.md
+- content/english/event/you-only-look-once-from-graphql-to-training-a-neural-network.md

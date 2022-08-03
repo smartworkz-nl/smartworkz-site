@@ -48,7 +48,6 @@ fields:
   label: type
   default: event
 pages:
-- content/english/event/building-trust-in-ai.md
 - content/english/event/content-recommendations-at-jodel.com-spiking-neural-networks-in-person-event.md
 - content/english/event/dash-ah-a.md
 - content/english/event/data-science-from-idea-to-production-from-your-laptop-to-the-cloud.md
@@ -65,4 +64,3 @@ pages:
 - content/english/event/reinforcement-and-transfer-learning.md
 - content/english/event/using-ai-for-asset-detection.md
 - content/english/event/workflow-engines-for-a-data-driven-world.md
-- content/english/event/you-only-look-once-from-graphql-to-training-a-neural-network.md

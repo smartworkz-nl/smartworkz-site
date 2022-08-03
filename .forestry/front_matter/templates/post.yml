@@ -36,8 +36,6 @@ fields:
   label: type
   default: post
 pages:
-- content/english/blog/building-in-compliance-in-your-ci-cd-pipeline-with-conftest.md
-- content/english/blog/cd4ml-ability-to-reproduce.md
 - content/english/blog/dockerizing-your-development-environment.md
 - content/english/blog/extending-conftest-with-plugins.md
 - content/english/blog/how-to-always-know-what-to-expect-from-your-data.md

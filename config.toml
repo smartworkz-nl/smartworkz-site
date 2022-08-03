@@ -206,16 +206,12 @@ enable = false
 mailchimp_form_action = "https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;id=a0a2c6d074"
 mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074"
 [[params.social]]
-icon = "ti-twitter-alt"
-link = "https://twitter.com/dataworkznl"
-title = "twitter"
-[[params.social]]
 icon = "ti-sharethis"
 link = "https://www.meetup.com/nl-NL/DataWorkz/"
 title = "meetup"
 [[params.social]]
 icon = "ti-github"
-link = "https://github.com/DataWorkz-NL"
+link = "https://github.com/smartworkz-nl"
 title = "github"
 [[params.social]]
 icon = "ti-linkedin"

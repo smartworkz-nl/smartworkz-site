@@ -16,6 +16,3 @@ fields:
 - type: datetime
   name: date
   label: date
-pages:
-- content/english/timeline/devoxx-uk.md
-- content/english/timeline/efteling.md

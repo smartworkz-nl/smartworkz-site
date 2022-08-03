@@ -14,6 +14,3 @@ fields:
     maxSize: 3
   label: bg image
   description: page header background image
-pages:
-- content/english/cases/conet-een-ideale-combo-uit-data-science-en-data-engineering.md
-- content/english/cases/nike.md

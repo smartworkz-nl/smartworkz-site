@@ -154,7 +154,7 @@ contact_form_action = "https://formspree.io/xleodbng"
 description = "Smartworkz - Slimmere oplossingen voor jou"
 email = "info@smartworkz.nl"
 google_analitycs_id = "G-3PG6NYRP8M"
-logo = "images/logo.png"
+logo = "images/logo.svg"
 mobile = "+31 (0)6 22 55 71 92"
 top_header = false
 [params.map]
@@ -205,10 +205,6 @@ preloader = "images/preloader.gif"
 enable = false
 mailchimp_form_action = "https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;id=a0a2c6d074"
 mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074"
-[[params.social]]
-icon = "ti-sharethis"
-link = "https://www.meetup.com/nl-NL/DataWorkz/"
-title = "meetup"
 [[params.social]]
 icon = "ti-github"
 link = "https://github.com/smartworkz-nl"

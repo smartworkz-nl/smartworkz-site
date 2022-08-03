@@ -47,9 +47,6 @@ fields:
   label: type
   default: team
 pages:
-- content/english/team/bert.md
-- content/english/team/dennis.md
-- content/english/team/evie.md
 - content/english/team/florine.md
 - content/english/team/ishan.md
 - content/english/team/jeroen-van-voorst.md

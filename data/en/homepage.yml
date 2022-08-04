@@ -3,11 +3,9 @@ slider:
   enable: true
   bg_image: images/banner/banner-1.jpg
   slider_item:
-  - title: Maatwerk oplossingen voor data vraagstukken
-    content: Data is voor bedrijven de belangrijkste onderscheidende factor geworden.
-      Hiervoor heb je experts nodig. Wij hebben die data engineers, die begrijpen
-      hoe je data technisch moet ontsluiten en de data scientists die de juiste informatie
-      uit je data gaan halen.
+  - title: Specialisme voor uw data maatwerk
+    content: Data is de nieuwe manier van sturen. Hier heeft men nieuwe specialisme
+      voor nodig....
     animation_in: ''
     animation_out: ''
     button:

@@ -2,10 +2,10 @@
 bg_image = "/images/banner/banner-2.jpg"
 bio = ""
 contact = nil
-course = "Data science"
+course = "Data Engineering"
 description = ""
 draft = true
-image = "/images/poepbroek.jpeg"
+image = "/images/microsoft_certified_badges.png"
 interest = ["science"]
 title = "David"
 

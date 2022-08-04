@@ -1,7 +1,6 @@
 ---
 title: Start Smartworkz
-type: timeline
-date: '2017-05-01T00:00:00Z'
+date: 2022-07-31T22:00:00+00:00
 
 ---
 Lora Lora

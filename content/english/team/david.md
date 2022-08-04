@@ -1,13 +1,14 @@
-+++
-bg_image = "/images/banner/banner-2.jpg"
-bio = ""
-contact = nil
-course = "Data Engineering"
-description = ""
-image = "/images/microsoft_certified_badges.png"
-interest = ["science"]
-title = "David"
+---
+title: Sander
+bg_image: "/images/banner/banner-2.jpg"
+description: ''
+image: "/images/poepbroek.jpeg"
+course: Data science
+bio: ''
+interest:
+- science
+contact: 
 
-+++
+---
 * test
 * test

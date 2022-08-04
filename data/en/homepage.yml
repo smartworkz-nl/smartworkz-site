@@ -64,7 +64,7 @@ about:
     stap.....
   button:
     enable: true
-    label: Meer zien van Smartworkz?
+    label: Meer zien van Smartworkz ?
     link: about
 course:
   enable: false

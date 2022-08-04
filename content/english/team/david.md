@@ -4,7 +4,6 @@ bio = ""
 contact = nil
 course = "Data Engineering"
 description = ""
-draft = true
 image = "/images/microsoft_certified_badges.png"
 interest = ["science"]
 title = "David"

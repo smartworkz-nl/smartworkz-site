@@ -1,6 +1,6 @@
 ---
 title: David
-bg_image: images/backgrounds/page-title.jpg
+bg_image: "/images/banner/banner-2.jpg"
 description: ''
 image: images/team/martin_overview.jpg
 course: Support

@@ -67,7 +67,7 @@ about:
     label: Meer zien van Dataworkz?
     link: about
 course:
-  enable: true
+  enable: false
   title: Onze workshops
 cta:
   enable: false

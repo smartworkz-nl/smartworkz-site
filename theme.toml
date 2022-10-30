@@ -9,6 +9,9 @@ tags = ["blog", "google-analytics", "fast", "modern", "minimal", "minimalistic",
 [author]
 homepage = "https://smartworkz.nl/"
 name = "Smartworkz"
+[menu.main]
+name = "Blogs"
+weight = 6
 [original]
 homepage = "https://themefisher.com/products/education-template/"
 name = "Educenter"

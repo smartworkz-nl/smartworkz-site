@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/6eac4cea-1da3-46fd-9213-24c3114d204e/deploy-status)](https://app.netlify.com/sites/boring-heisenberg-e4c346/deploys)
 
-De huidige site van Dataworkz is opgebouwd uit de volgende onderdelen:
+De huidige site van Smartworkz is opgebouwd uit de volgende onderdelen:
 
 - Hugo (https://gohugo.io static site generator)
 - forestry.io (http://forestry.io static site cms)

@@ -5,7 +5,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12 mb-5">
-        <h3 class="mb-0 text-nowrap mr-3">Komende events</h3>
+        <h3 class="mb-0 text-nowrap mr-3">Coming events</h3>
       </div>
     </div>
     <div class="row">
@@ -14,7 +14,7 @@
       <!-- event -->
       {{ if lt (len ($events)) 1 }}
       <div class="col-12 mb-5">
-        <p>Er zijn nog geen events gepland, houd de site in de gaten!</p>
+        <p>There are no events planned yet, keep an eye on the site!</p>
       </div>
       {{ end }}
       {{ range $events }}
@@ -27,7 +27,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12 mb-5">
-        <h3 class="mb-0 text-nowrap mr-3">Oude events</h3>
+        <h3 class="mb-0 text-nowrap mr-3">Past events</h3>
       </div>
     </div>
     <div class="row">
@@ -36,7 +36,7 @@
       {{ $oldevents := where $oldevents "Date" "lt" now  }}
       {{ if lt (len ($oldevents)) 1 }}
       <div class="col-12 mb-5">
-        <p>Er zijn nog geen events gepland, houd de site in de gaten!</p>
+        <p>There are no events planned yet, keep an eye on the site!</p>
       </div>
       {{ end }}
       {{ range $oldevents }}

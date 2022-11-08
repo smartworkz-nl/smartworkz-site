@@ -21,21 +21,25 @@ languageCode = "nl-NL"
 languageName = "Nl"
 weight = 1
 [[menu.company]]
+URL = "about"
+name = "About"
+weight = 2
+[[menu.company]]
 URL = "insights"
 name = "Insights"
 weight = 1
-[[menu.company]]
-URL = "about"
-name = "Over"
-weight = 2
 [[menu.company]]
 URL = "contact"
 name = "Contact"
 weight = 3
 [[menu.footer]]
-URL = "team"
+URL = "about/team"
 name = "Team"
 weight = 1
+[[menu.footer]]
+URL = "work-at"
+name = "Work at"
+weight = 4
 [[menu.footer]]
 URL = "event"
 name = "Events"
@@ -44,10 +48,6 @@ weight = 2
 URL = "blog"
 name = "Blogs"
 weight = 3
-[[menu.footer]]
-URL = "work-at"
-name = "Werken bij"
-weight = 4
 [[menu.main]]
 URL = "solutions#data-workshop"
 name = "Workshops"
@@ -55,7 +55,7 @@ parent = "Solutions"
 weight = 3
 [[menu.main]]
 URL = "about"
-name = "Over ons"
+name = "About us"
 parent = "about"
 weight = 2
 [[menu.main]]
@@ -65,7 +65,7 @@ parent = "Solutions"
 weight = 2
 [[menu.main]]
 URL = "career/culture"
-name = "Cultuur"
+name = "Culture"
 parent = "career"
 weight = 2
 [[menu.main]]
@@ -80,7 +80,7 @@ parent = "Insights"
 weight = 3
 [[menu.main]]
 URL = "solutions#data-oplossingen"
-name = "Quick wins"
+name = "Quick Wins"
 parent = "Solutions"
 weight = 1
 [[menu.main]]
@@ -95,7 +95,7 @@ parent = "about"
 weight = 1
 [[menu.main]]
 URL = "career"
-name = "Vacatures"
+name = "Vacancies"
 parent = "career"
 weight = 1
 [[menu.main]]

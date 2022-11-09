@@ -10,3 +10,4 @@ package-lock.json
 public
 DS_Store
 resources/_gen
+.DS_Store

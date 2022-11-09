@@ -3,11 +3,10 @@ slider:
   enable: true
   bg_image: images/banner/banner-1.jpg
   slider_item:
-  - title: Your Cloud Specialist
-    content: Data has become the most important differentiator for companies. You
-      need experts for this. We have those data engineers who understand how to make
-      data technically accessible and the data scientists who will extract the right
-      information from your data...
+  - title: Your production-worthy Data Science Specialist
+    content: Data is becoming increasingly important in our environment. We offer
+      specialists (Data Engineers, Data Scientist and Machine Learning Engineers)
+      who know how to get your solution from Proof of Concept to Production.
     animation_in: ''
     animation_out: ''
     button:

@@ -21,8 +21,7 @@ banner_feature:
   - name: Quick Wins
     icon: ti-book
     content: We have developed Quick Wins for typical problems in the data world.
-      Do you recognize a challenge? Then we can solve it for you with a concrete and
-      baked result within approximately 2 weeks.
+      Do you recognize a challenge? Contact us
     button:
       enable: true
       label: More info

@@ -50,11 +50,7 @@ banner_feature:
     button:
       enable: false
     content: We consider good cooperation with our partnerships very important. Not
-      only with customers, but also with the community and leading companies. As a
-      Microsoft Silver Partner we have a lot of experience in the field of Azure-based
-      data platforms and ML solutions. And because we also find that enterprise AI
-      platforms should love code, we can as a Dataiku partner quickly and reliably
-      realize Data Science and ML flows on production.
+      only with customers, but also with the community and leading companies.
 about:
   enable: true
   title: About Smartworkz

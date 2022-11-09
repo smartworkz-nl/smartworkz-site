@@ -18,9 +18,9 @@ banner_feature:
   enable: true
   image: images/banner/banner-feature.png
   feature_item:
-  - name: Quick Wins
+  - name: Wins
     icon: ti-book
-    content: We have developed Quick Wins for typical problems in the data world.
+    content: We have developed a thirty eye for typical problems in the data world.
       Do you recognize a challenge? Contact us
     button:
       enable: true

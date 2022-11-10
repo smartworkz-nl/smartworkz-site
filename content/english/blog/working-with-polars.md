@@ -13,7 +13,7 @@ type = "post"
 
 ### **Introduction**
 
-Pandas is the most popular library when it comes to working with structured data. The reason behind this is the panda’s powerful tool called DataFrame. A DataFrame is a table where each column represents a different type of data(sometimes called a field). The columns have names. Each row represents a record or entity.
+Pandas is the most popular library when it comes to working with structured data. The reason behind this is the pandas powerful tool called DataFrame. A DataFrame is a table where each column represents a different type of data(sometimes called a field). The columns have names. Each row represents a record or entity.
 
 In this article, we look at an alternative for Pandas that is almost 3 times faster. [Polars](https://github.com/pola-rs) is one of the lesser-known libraries and was only released a few months ago. Pandas is still one of the best tools out there for data manipulation and analysis, and in no way Polars can replace it, at least for the time being. I just wanted to share this library to make my readers know about an alternative they can try out for fun.
 

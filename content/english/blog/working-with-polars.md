@@ -10,6 +10,7 @@ title = "Working with Polars"
 type = "post"
 
 +++
+
 ### **Introduction**
 
 Pandas is the most popular library when it comes to working with structured data. The reason behind this is the panda’s powerful tool called DataFrame. A DataFrame is a table where each column represents a different type of data(sometimes called a field). The columns have names. Each row represents a record or entity.
@@ -20,7 +21,7 @@ Polars is a DataFrame library written in the [Rust](https://www.rust-lang.org/) 
 
 Here is an excerpt taken from the [Polars book](https://pola-rs.github.io/polars-book/user-guide/index.html):
 
-![](/images/63342p10.png)
+![](/images/63342p10.png)![1668080689974](image/working-with-polars/1668080689974.png)
 
 In this article, we present an introduction to the Polars library covering most of the basic stuff. For we will use the [Wine Reviews dataset](https://www.kaggle.com/zynicide/wine-reviews) which you can find on Kaggle.
 
@@ -50,7 +51,7 @@ Let us start with a basic Data Analysis.
 
     data.shape
     > (150930, 11)
-    
+
     data.columns
 
 ![](/images/96375p7.png)

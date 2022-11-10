@@ -21,7 +21,7 @@ Polars is a DataFrame library written in the [Rust](https://www.rust-lang.org/) 
 
 Here is an excerpt taken from the [Polars book](https://pola-rs.github.io/polars-book/user-guide/index.html):
 
-![](/images/63342p10.png)![1668080689974](image/working-with-polars/1668080689974.png)
+![1668081358368](image/working-with-polars/1668081358368.png)
 
 In this article, we present an introduction to the Polars library covering most of the basic stuff. For we will use the [Wine Reviews dataset](https://www.kaggle.com/zynicide/wine-reviews) which you can find on Kaggle.
 

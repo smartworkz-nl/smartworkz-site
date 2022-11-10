@@ -54,7 +54,7 @@ Let us start with a basic Data Analysis.
 
     data.columns
 
-![](/images/96375p7.png)
+![1668081554742](image/working-with-polars/1668081554742.png)
 
     data.dtypes
 

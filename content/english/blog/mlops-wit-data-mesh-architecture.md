@@ -160,7 +160,7 @@ The CloudFormation template for the **consumer account** generates the following
 To create resources in the central account, complete the following steps:
 
  1. Sign in to the central account’s AWS CloudFormation console in the target Region.
- 2. Choose **Launch Stack:**   
+ 2. Choose **Launch Stack:**
     [![Launch Stack](/static/images/Aspose.Words.06580717-e26c-40ea-bebf-be8283065088.001.jpeg)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=stack-central&templateURL=https://aws-bigdata-blog.s3.amazonaws.com/artifacts/lakeformationtbac/cfn/tbac-cross-account-central.yaml)
  3. Choose **Next**.
  4. For **Stack name**, enter _stack-central_.

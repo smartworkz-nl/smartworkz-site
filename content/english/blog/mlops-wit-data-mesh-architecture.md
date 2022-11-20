@@ -10,6 +10,7 @@ title = "MLOps with Data Mesh Architecture"
 type = "post"
 
 +++
+
 # Data Mesh
 
 _The code for this example is available on_ [_GitHub_](https://github.com/aws-samples/amazon-sagemaker-lakeformation-datamesh)_._
@@ -129,7 +130,7 @@ The CloudFormation template for the **producer account** generates the following
 * Allow Amazon S3 bucket access for the central account Lake Formation service role.
 * One AWS Glue crawler
 * One AWS Glue crawler service role
-* Grant permissions on the S3 bucket locations credit-card-lf-<ProducerAccountID>-<aws-region> to the AWS Glue crawler role
+* Grant permissions on the S3 bucket locations credit-card-lf-`<ProducerAccountID>`-`<aws-region>` to the AWS Glue crawler role
 * One producer steward IAM user
 
 The CloudFormation template for the **central account** generates the following resources:
@@ -149,7 +150,7 @@ The CloudFormation template for the **central account** generates the following 
 The CloudFormation template for the **consumer account** generates the following resources:
 
 * One S3 bucket:
-  * <AWS Account ID>-<aws-region>-athena-logs
+  * `<AWS Account ID>`-`<aws-region>`-athena-logs
 * One Athena workgroup:
   * consumer-workgroup
 * Three IAM users:
@@ -159,16 +160,16 @@ The CloudFormation template for the **consumer account** generates the following
 
 To create resources in the central account, complete the following steps:
 
- 1. Sign in to the central account’s AWS CloudFormation console in the target Region.
- 2. Choose **Launch Stack:**
-    [![Launch Stack](/static/images/Aspose.Words.06580717-e26c-40ea-bebf-be8283065088.001.jpeg)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=stack-central&templateURL=https://aws-bigdata-blog.s3.amazonaws.com/artifacts/lakeformationtbac/cfn/tbac-cross-account-central.yaml)
- 3. Choose **Next**.
- 4. For **Stack name**, enter _stack-central_.
- 5. For **DataMeshOwnerUserPassword**, enter the password you want for the data lake admin IAM user in the central account.
- 6. For **ProducerStewardUserPassword**, enter the password you want for the producer steward IAM user in the producer account.
- 7. For **ProducerAWSAccount**, enter the AWS <ProducerAccountID>.
- 8. Choose **Next**.
- 9. On the next page, choose **Next**.
+1. Sign in to the central account’s AWS CloudFormation console in the target Region.
+2. Choose **Launch Stack:**
+   [![Launch Stack](/static/images/Aspose.Words.06580717-e26c-40ea-bebf-be8283065088.001.jpeg)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=stack-central&templateURL=https://aws-bigdata-blog.s3.amazonaws.com/artifacts/lakeformationtbac/cfn/tbac-cross-account-central.yaml)
+3. Choose **Next**.
+4. For **Stack name**, enter _stack-central_.
+5. For **DataMeshOwnerUserPassword**, enter the password you want for the data lake admin IAM user in the central account.
+6. For **ProducerStewardUserPassword**, enter the password you want for the producer steward IAM user in the producer account.
+7. For **ProducerAWSAccount**, enter the AWS `<ProducerAccountID>`.
+8. Choose **Next**.
+9. On the next page, choose **Next**.
 10. Review the details on the final page and select **I acknowledge that AWS CloudFormation might create IAM resources**.
 11. Choose **Create** **stack**.
 12. Collect the value for LFRegisterLocationServiceRole on the stack’s Outputs tab.
@@ -177,16 +178,16 @@ To create resources in the central account, complete the following steps:
 
 To set up resources in the producer account, complete the following steps:
 
- 1. Sign in to the producer account’s AWS CloudFormation console in the target Region.
- 2. Choose **Launch Stack**:[
-    ![](/static/images/Aspose.Words.06580717-e26c-40ea-bebf-be8283065088.002.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=stack-producer&templateURL=https://aws-bigdata-blog.s3.amazonaws.com/artifacts/lakeformationtbac/cfn/tbac-cross-account-producer.yaml)
- 3. Choose **Next**.
- 4. For **Stack name**, enter stack-producer.
- 5. For **CentralAccountID**, copy and paste the value of the <CentralAccountID> .
- 6. For **CentralAccountLFServiceRole**, copy and paste the value of the LFRegisterLocationServiceRole collected from the stack-central.
- 7. For **LFDatabaseName**, keep the default value of the lf-ml database name.
- 8. For **ProducerStewardUserPassword**, enter the password you want for the data lake admin IAM user on the producer account.
- 9. Choose **Next**.
+1. Sign in to the producer account’s AWS CloudFormation console in the target Region.
+2. Choose **Launch Stack**:[
+   ![](/static/images/Aspose.Words.06580717-e26c-40ea-bebf-be8283065088.002.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=stack-producer&templateURL=https://aws-bigdata-blog.s3.amazonaws.com/artifacts/lakeformationtbac/cfn/tbac-cross-account-producer.yaml)
+3. Choose **Next**.
+4. For **Stack name**, enter stack-producer.
+5. For **CentralAccountID**, copy and paste the value of the `<CentralAccountID>` .
+6. For **CentralAccountLFServiceRole**, copy and paste the value of the LFRegisterLocationServiceRole collected from the stack-central.
+7. For **LFDatabaseName**, keep the default value of the lf-ml database name.
+8. For **ProducerStewardUserPassword**, enter the password you want for the data lake admin IAM user on the producer account.
+9. Choose **Next**.
 10. On the next page, choose **Next**.
 11. Review the details on the final page and select **I acknowledge that AWS CloudFormation might create IAM resources**.
 12. Choose **Create stack.**
@@ -195,16 +196,16 @@ To set up resources in the producer account, complete the following steps:
 
 To create resources in the consumer account, complete the following steps:
 
- 1. Sign in to the consumer account’s AWS CloudFormation console in the target Region.
- 2. Choose **Launch Stack**:
-    [![](/static/images/Aspose.Words.06580717-e26c-40ea-bebf-be8283065088.002.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=stack-consumer&templateURL=https://aws-bigdata-blog.s3.amazonaws.com/artifacts/lakeformationtbac/cfn/tbac-cross-account-consumer.yaml)
- 3. Choose **Next**.
- 4. For **Stack name**, enter stack-consumer.
- 5. For **ConsumerAdminUserName** and **ConsumerAdminUserPassword**, enter the user name and password you want for the data lake admin IAM user.
- 6. For **ConsumerAnalyst1UserName** and **ConsumerAnalyst1UserPassword**, enter the user name and password you want for the consumeranalyst1 IAM user.
- 7. For **ConsumerAnalyst2UserName** and **ConsumerAnalyst2UserPassword**, enter the user name and password you want for the consumeranalyst2 IAM user.
- 8. Choose **Next**.
- 9. On the next page, choose **Next**.
+1. Sign in to the consumer account’s AWS CloudFormation console in the target Region.
+2. Choose **Launch Stack**:
+   [![](/static/images/Aspose.Words.06580717-e26c-40ea-bebf-be8283065088.002.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=stack-consumer&templateURL=https://aws-bigdata-blog.s3.amazonaws.com/artifacts/lakeformationtbac/cfn/tbac-cross-account-consumer.yaml)
+3. Choose **Next**.
+4. For **Stack name**, enter stack-consumer.
+5. For **ConsumerAdminUserName** and **ConsumerAdminUserPassword**, enter the user name and password you want for the data lake admin IAM user.
+6. For **ConsumerAnalyst1UserName** and **ConsumerAnalyst1UserPassword**, enter the user name and password you want for the consumeranalyst1 IAM user.
+7. For **ConsumerAnalyst2UserName** and **ConsumerAnalyst2UserPassword**, enter the user name and password you want for the consumeranalyst2 IAM user.
+8. Choose **Next**.
+9. On the next page, choose **Next**.
 10. Review the details on the final page and select **I acknowledge that AWS CloudFormation might create IAM resources**.
 11. Choose **Create stack**.
 
@@ -243,11 +244,11 @@ Use the following policy, and replace the account number and Region with your ow
 
 `}`
 
-Replace the <aws-region>, <ProducerAccountID>, <ConsumerAccountID> and <CentralAccountID> values in the above policy as appropriate and save it in a file called policy.json.
+Replace the `<aws-region>`, `<ProducerAccountID>`, `<ConsumerAccountID>` and `<CentralAccountID>` values in the above policy as appropriate and save it in a file called policy.json.
 
 1. Next, run the following [AWS Command Line Interface](http://aws.amazon.com/cli) (AWS CLI) command on [AWS CloudShell](https://aws.amazon.com/cloudshell/).
 
-aws glue put-resource-policy --region <aws-region> --cli-input-json file://policy.json
+aws glue put-resource-policy --region `<aws-region>` --cli-input-json file://policy.json
 
 For more information about this policy, see [put-resource-policy](https://docs.aws.amazon.com/cli/latest/reference/glue/put-resource-policy.html).
 
@@ -334,16 +335,16 @@ This assigns the database=credit-card tag to the credit-card database.
 
 Next, we share the LF-tags and data lake permissions with the producer account so that ProducerSteward in the producer account can run AWS Glue crawlers and generate tables in the preceding skeleton databases.
 
- 1. Under **Permissions** in the navigation pane, under **Administrative roles and tasks**, choose **LF-tag permissions**.
- 2. Choose **Grant**.
- 3. For **Principals**, select **External accounts**.
- 4. For **AWS account or AWS organization**, enter the account ID for the producer account.
- 5. In the **LF-Tags** section, we only need to add database-level tags.
- 6. For **Key**, enter database and for **Values**, choose credit-card.
- 7. For **Permissions**, choose **Describe** and **Associate** for both **LF-tag permissions** and **Grantable permissions**.
- 8. Choose **Grant**.
-    ![](/images/Aspose.Words.06580717-e26c-40ea-bebf-be8283065088.013.jpeg)
- 9. In the navigation pane, under **Permissions**, **Data lake permissions**, choose **Grant**.
+1. Under **Permissions** in the navigation pane, under **Administrative roles and tasks**, choose **LF-tag permissions**.
+2. Choose **Grant**.
+3. For **Principals**, select **External accounts**.
+4. For **AWS account or AWS organization**, enter the account ID for the producer account.
+5. In the **LF-Tags** section, we only need to add database-level tags.
+6. For **Key**, enter database and for **Values**, choose credit-card.
+7. For **Permissions**, choose **Describe** and **Associate** for both **LF-tag permissions** and **Grantable permissions**.
+8. Choose **Grant**.
+   ![](/images/Aspose.Words.06580717-e26c-40ea-bebf-be8283065088.013.jpeg)
+9. In the navigation pane, under **Permissions**, **Data lake permissions**, choose **Grant**.
 10. For **Principals**, select **External accounts**.
 11. For **AWS account or AWS organization**, enter the account ID for the producer account.
 12. For **LF-tags or catalog resources**, select **Resources matched by LF-Tags (recommended)**.
@@ -391,16 +392,16 @@ After the resource link creation, you should see both the resource link database
 
 Next, we need to grant permissions to the AWS Glue crawler role so that the crawler can crawl the source bucket and create the tables.
 
- 1. Select the rl_credit-card database and on the **Actions** menu, choose **Grant**.
- 2. In the **Grant data permissions** section, select **IAM users and roles**, and choose the AWS Glue crawler role that was created by the CloudFormation template (for example, stack-producer-AWSGlueServiceRoleDefault-xxxxxx).
- 3. For **Databases**, choose rl_credit-card.
- 4. For **Resource link permissions**, select **Describe**.
- 5. Choose **Grant**.
-    ![](/static/images/Aspose.Words.06580717-e26c-40ea-bebf-be8283065088.021.png)
- 6. Next, in the navigation pane, choose **Data lake Permissions** and choose **Grant**.
- 7. For **IAM users and roles**, choose the role stack-producer-AWSGlueServiceRoleDefault-XXXX.
- 8. For **LF-Tags or catalog resources**, select **Resources matched by LF-Tags**.
- 9. Enter the key database and values credit-card.
+1. Select the rl_credit-card database and on the **Actions** menu, choose **Grant**.
+2. In the **Grant data permissions** section, select **IAM users and roles**, and choose the AWS Glue crawler role that was created by the CloudFormation template (for example, stack-producer-AWSGlueServiceRoleDefault-xxxxxx).
+3. For **Databases**, choose rl_credit-card.
+4. For **Resource link permissions**, select **Describe**.
+5. Choose **Grant**.
+   ![](/static/images/Aspose.Words.06580717-e26c-40ea-bebf-be8283065088.021.png)
+6. Next, in the navigation pane, choose **Data lake Permissions** and choose **Grant**.
+7. For **IAM users and roles**, choose the role stack-producer-AWSGlueServiceRoleDefault-XXXX.
+8. For **LF-Tags or catalog resources**, select **Resources matched by LF-Tags**.
+9. Enter the key database and values credit-card.
 10. For **Database permissions**, select **Create table** and **Describe**.
 11. For **Table permissions**, choose **Select**, **Describe**, and **Alter**.
 12. Choose **Grant**.
@@ -550,7 +551,7 @@ The following architecture describes the detailed steps of how the consumer bank
 
 [![img](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2022/07/21/ML-8551-image010.png)](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2022/07/21/ML-8551-image010.png)
 
-The general steps to register a data product are as follows:
+The general steps to register a data product are summarized as follows:
 
 1. Create a target database for the data product in the central governance account. As an example, the CloudFormation template from the central account already creates the target database `credit-card`.
 2. Share the created target database with the origin in the producer account.
@@ -596,6 +597,7 @@ The workflow consists of the following components:
    Amazon Athena
 
    to query the table via the resource link database in Lake Formation.
+
    1. For data exploration, they can use Studio notebooks to process the data with interactive querying via Athena.
    2. For data processing and feature engineering, they can run SageMaker processing jobs with an Athena data source and output results back to [Amazon Simple Storage Service](http://aws.amazon.com/s3) (Amazon S3).
    3. After the data is processed and available in Amazon S3 on the ML CoE account, data scientists can use SageMaker training jobs to train models and [SageMaker Pipelines](https://aws.amazon.com/sagemaker/pipelines/) to automate model-building workflows.
@@ -639,7 +641,7 @@ In this example, you can use the Python SDK to trigger a processing job with the
 AthenaDataset = AthenaDatasetDefinition (
   catalog = 'AwsDataCatalog', 
   database = 'rl_credit-card', 
-  query_string = 'SELECT * FROM "rl_credit-card"."credit_card""',                                
+  query_string = 'SELECT * FROM "rl_credit-card"."credit_card""',                              
   output_s3_uri = 's3://sagemaker-us-east-1-********7363/athenaqueries/', 
   work_group = 'primary', 
   output_format = 'PARQUET')
@@ -722,6 +724,7 @@ The process includes the following steps:
    AWS Lambda
 
    function to synchronize the updated data product with the consumer account. You can use this trigger to reflect the data changes by doing the following:
+
    1. Rerun the AWS Glue crawler.
    2. Trigger model retraining if the data drifts beyond a given threshold.
 

@@ -4,7 +4,6 @@ bg_image = ""
 categories = ["AWS"]
 date = 2022-12-04T23:00:00Z
 description = ""
-draft = true
 image = "/images/step.png"
 tags = []
 title = "Mastering Step Functions States and Paths"
